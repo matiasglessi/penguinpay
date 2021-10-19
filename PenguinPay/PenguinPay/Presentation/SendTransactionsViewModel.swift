@@ -9,9 +9,17 @@ import Foundation
 
 class SendTransactionsViewModel {
     private let getCountryService: GetCountryService
+    private let getExchangeRateService: GetExchangeRateService
 
-    init(getCountryService: GetCountryService) {
+    init(getCountryService: GetCountryService, getExchangeRateService: GetExchangeRateService) {
         self.getCountryService = getCountryService
+        self.getExchangeRateService = getExchangeRateService
+    }
+    
+    func getExchangeRate(for countryId: String) {
+        getExchangeRateService.execute(countryID: countryId) { result in
+            print(result)
+        }
     }
     
     func getCountryPrefix(for partialNumber: String) -> String {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SendTransactions: UIViewController {
+class SendTransactionsViewController: UIViewController {
 
     @IBOutlet weak var fullNameTextField: UITextField!
     @IBOutlet weak var countryTextField: UITextField!
@@ -21,7 +21,10 @@ class SendTransactions: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = SendTransactionsViewModel(getCountryService: DefaultGetCountryService())
+        viewModel = SendTransactionsViewModel(
+            getCountryService: DefaultGetCountryService(),
+            getExchangeRateService: DefaultGetExchangeRateService(apiClient: URLSessionAPIClient()))
+        
         phoneNumberTextField.delegate = self
         transactionValueTextField.delegate = self
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(screenTap(_:))))
@@ -35,7 +38,7 @@ class SendTransactions: UIViewController {
     }
 }
 
-extension SendTransactions: UITextFieldDelegate {
+extension SendTransactionsViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = textField.text else { return false }
         
