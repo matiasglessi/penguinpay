@@ -69,12 +69,12 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXE-HW-SLo">
                                                         <rect key="frame" x="10" y="54" width="354" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="honorifix-prefix"/>
                                                     </textField>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ObC-6z-kYm">
                                                         <rect key="frame" x="10" y="108" width="354" height="34"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHc-Zz-7I3">
+                                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHc-Zz-7I3">
                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="34"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="70" id="Dji-GY-xBO"/>
@@ -203,6 +203,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a2E-g0-KiH" secondAttribute="trailing" id="yvt-L9-X0F"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countryTextField" destination="BHc-Zz-7I3" id="5jr-sC-Gh5"/>
+                        <outlet property="fullNameTextField" destination="dXE-HW-SLo" id="Dl7-rG-ENZ"/>
+                        <outlet property="phoneNumberTextField" destination="ksu-g2-LKu" id="ojI-VO-VGp"/>
+                        <outlet property="transactionPreviewMessage" destination="EYq-Tw-Yr0" id="Tb4-Lt-zJH"/>
+                        <outlet property="transactionValueTextField" destination="0aH-dE-nxf" id="ZFY-l0-YA6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

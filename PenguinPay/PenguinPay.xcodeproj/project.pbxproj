@@ -58,13 +58,21 @@
 			children = (
 				B39721E3271E0F1300B5C6E2 /* AppDelegate.swift */,
 				B39721E5271E0F1300B5C6E2 /* SceneDelegate.swift */,
-				B39721E7271E0F1300B5C6E2 /* SendTransactions.swift */,
-				B39721E9271E0F1300B5C6E2 /* Main.storyboard */,
+				B39721F7271E3E9900B5C6E2 /* Presentation */,
 				B39721EC271E0F1500B5C6E2 /* Assets.xcassets */,
 				B39721EE271E0F1500B5C6E2 /* LaunchScreen.storyboard */,
 				B39721F1271E0F1500B5C6E2 /* Info.plist */,
 			);
 			path = PenguinPay;
+			sourceTree = "<group>";
+		};
+		B39721F7271E3E9900B5C6E2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B39721E7271E0F1300B5C6E2 /* SendTransactions.swift */,
+				B39721E9271E0F1300B5C6E2 /* Main.storyboard */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
