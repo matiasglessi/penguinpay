@@ -13,6 +13,11 @@
 		B39721EB271E0F1300B5C6E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39721E9271E0F1300B5C6E2 /* Main.storyboard */; };
 		B39721ED271E0F1500B5C6E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39721EC271E0F1500B5C6E2 /* Assets.xcassets */; };
 		B39721F0271E0F1500B5C6E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39721EE271E0F1500B5C6E2 /* LaunchScreen.storyboard */; };
+		B39721FB271EF3FB00B5C6E2 /* SendTransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39721FA271EF3FB00B5C6E2 /* SendTransactionsViewModel.swift */; };
+		B39721FE271F170500B5C6E2 /* String+PhoneFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39721FD271F170500B5C6E2 /* String+PhoneFormatting.swift */; };
+		B3972202271F17C200B5C6E2 /* GetCountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3972201271F17C200B5C6E2 /* GetCountryService.swift */; };
+		B3972204271F17DE00B5C6E2 /* DefaultGetCountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3972203271F17DE00B5C6E2 /* DefaultGetCountryService.swift */; };
+		B3972208271F181100B5C6E2 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3972207271F181100B5C6E2 /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		B39721EC271E0F1500B5C6E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B39721EF271E0F1500B5C6E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B39721F1271E0F1500B5C6E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39721FA271EF3FB00B5C6E2 /* SendTransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTransactionsViewModel.swift; sourceTree = "<group>"; };
+		B39721FD271F170500B5C6E2 /* String+PhoneFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+PhoneFormatting.swift"; sourceTree = "<group>"; };
+		B3972201271F17C200B5C6E2 /* GetCountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountryService.swift; sourceTree = "<group>"; };
+		B3972203271F17DE00B5C6E2 /* DefaultGetCountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGetCountryService.swift; sourceTree = "<group>"; };
+		B3972207271F181100B5C6E2 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,9 @@
 		B39721E2271E0F1300B5C6E2 /* PenguinPay */ = {
 			isa = PBXGroup;
 			children = (
+				B3972200271F17B000B5C6E2 /* Infrastructure */,
+				B39721FF271F17A600B5C6E2 /* Core */,
+				B39721FC271F16F100B5C6E2 /* Shared */,
 				B39721E3271E0F1300B5C6E2 /* AppDelegate.swift */,
 				B39721E5271E0F1300B5C6E2 /* SceneDelegate.swift */,
 				B39721F7271E3E9900B5C6E2 /* Presentation */,
@@ -70,9 +83,51 @@
 			isa = PBXGroup;
 			children = (
 				B39721E7271E0F1300B5C6E2 /* SendTransactions.swift */,
+				B39721FA271EF3FB00B5C6E2 /* SendTransactionsViewModel.swift */,
 				B39721E9271E0F1300B5C6E2 /* Main.storyboard */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B39721FC271F16F100B5C6E2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B39721FD271F170500B5C6E2 /* String+PhoneFormatting.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B39721FF271F17A600B5C6E2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B3972206271F180700B5C6E2 /* Domain */,
+				B3972205271F17FD00B5C6E2 /* Service */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B3972200271F17B000B5C6E2 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B3972203271F17DE00B5C6E2 /* DefaultGetCountryService.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		B3972205271F17FD00B5C6E2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B3972201271F17C200B5C6E2 /* GetCountryService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B3972206271F180700B5C6E2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B3972207271F181100B5C6E2 /* Country.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +201,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B39721E8271E0F1300B5C6E2 /* SendTransactions.swift in Sources */,
+				B3972204271F17DE00B5C6E2 /* DefaultGetCountryService.swift in Sources */,
+				B3972202271F17C200B5C6E2 /* GetCountryService.swift in Sources */,
+				B39721FB271EF3FB00B5C6E2 /* SendTransactionsViewModel.swift in Sources */,
+				B3972208271F181100B5C6E2 /* Country.swift in Sources */,
 				B39721E4271E0F1300B5C6E2 /* AppDelegate.swift in Sources */,
+				B39721FE271F170500B5C6E2 /* String+PhoneFormatting.swift in Sources */,
 				B39721E6271E0F1300B5C6E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
