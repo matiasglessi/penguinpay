@@ -44,9 +44,9 @@ class SendTransactionsViewModel {
     
     func getTransactionMessage(recipientName: String?, recipientCountry: String?, transactionValue: String?) -> String {
 
-        guard let recipientName = recipientName else { return "" }
-        guard let recipientCountry = recipientCountry else { return "" }
-        guard let transactionValue = transactionValue else { return "" }
+        guard let recipientName = recipientName, !recipientName.isEmpty else { return "" }
+        guard let recipientCountry = recipientCountry, !recipientCountry.isEmpty else { return "" }
+        guard let transactionValue = transactionValue, !transactionValue.isEmpty else { return "" }
         guard let exchangeRate = exchangeRate else { return "" }
         
         return recipientName + " will recieve " + "\n" + getTransactionInBinarian(exchangeRate, transactionValue) + "\n" + getConvertionExpression(exchangeRate, recipientCountry)
