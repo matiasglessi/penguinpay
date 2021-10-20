@@ -21,6 +21,7 @@
 		B33105B027208FB400E0FD29 /* GetExchangeRateServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33105AF27208FB400E0FD29 /* GetExchangeRateServiceMock.swift */; };
 		B33105B227208FEB00E0FD29 /* GetCountryServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33105B127208FEB00E0FD29 /* GetCountryServiceMock.swift */; };
 		B33105B42720900700E0FD29 /* BinaryConverterServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33105B32720900700E0FD29 /* BinaryConverterServiceMock.swift */; };
+		B33105B62720A11C00E0FD29 /* GetExchangeRateServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33105B52720A11C00E0FD29 /* GetExchangeRateServiceTests.swift */; };
 		B39721E4271E0F1300B5C6E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39721E3271E0F1300B5C6E2 /* AppDelegate.swift */; };
 		B39721E6271E0F1300B5C6E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39721E5271E0F1300B5C6E2 /* SceneDelegate.swift */; };
 		B39721E8271E0F1300B5C6E2 /* SendTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39721E7271E0F1300B5C6E2 /* SendTransactionsViewController.swift */; };
@@ -33,6 +34,9 @@
 		B3972204271F17DE00B5C6E2 /* DefaultGetCountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3972203271F17DE00B5C6E2 /* DefaultGetCountryService.swift */; };
 		B3972208271F181100B5C6E2 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3972207271F181100B5C6E2 /* Country.swift */; };
 		B397220A271F3F3F00B5C6E2 /* GetExchangeRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3972209271F3F3F00B5C6E2 /* GetExchangeRateService.swift */; };
+		B3DE0EAC2720A5C800AFCE0C /* APIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE0EAB2720A5C800AFCE0C /* APIClientMock.swift */; };
+		B3DE0EAF2720A61C00AFCE0C /* URLSessionAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE0EAE2720A61C00AFCE0C /* URLSessionAPIClientTests.swift */; };
+		B3DE0EB12720AA6000AFCE0C /* SessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE0EB02720AA6000AFCE0C /* SessionMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,7 @@
 		B33105AF27208FB400E0FD29 /* GetExchangeRateServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeRateServiceMock.swift; sourceTree = "<group>"; };
 		B33105B127208FEB00E0FD29 /* GetCountryServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountryServiceMock.swift; sourceTree = "<group>"; };
 		B33105B32720900700E0FD29 /* BinaryConverterServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryConverterServiceMock.swift; sourceTree = "<group>"; };
+		B33105B52720A11C00E0FD29 /* GetExchangeRateServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeRateServiceTests.swift; sourceTree = "<group>"; };
 		B39721E0271E0F1300B5C6E2 /* PenguinPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenguinPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39721E3271E0F1300B5C6E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B39721E5271E0F1300B5C6E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +81,9 @@
 		B3972203271F17DE00B5C6E2 /* DefaultGetCountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGetCountryService.swift; sourceTree = "<group>"; };
 		B3972207271F181100B5C6E2 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		B3972209271F3F3F00B5C6E2 /* GetExchangeRateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeRateService.swift; sourceTree = "<group>"; };
+		B3DE0EAB2720A5C800AFCE0C /* APIClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientMock.swift; sourceTree = "<group>"; };
+		B3DE0EAE2720A61C00AFCE0C /* URLSessionAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionAPIClientTests.swift; sourceTree = "<group>"; };
+		B3DE0EB02720AA6000AFCE0C /* SessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 			children = (
 				B33105A3272085B900E0FD29 /* PenguinPayTests.swift */,
 				B33105AE27208F9200E0FD29 /* Utilities */,
+				B3DE0EAD2720A5ED00AFCE0C /* Infraestructure */,
 				B33105AD27208F7C00E0FD29 /* Presentation */,
 				B33105A5272085B900E0FD29 /* Info.plist */,
 			);
@@ -148,6 +157,8 @@
 				B33105AF27208FB400E0FD29 /* GetExchangeRateServiceMock.swift */,
 				B33105B127208FEB00E0FD29 /* GetCountryServiceMock.swift */,
 				B33105B32720900700E0FD29 /* BinaryConverterServiceMock.swift */,
+				B3DE0EAB2720A5C800AFCE0C /* APIClientMock.swift */,
+				B3DE0EB02720AA6000AFCE0C /* SessionMock.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -242,6 +253,15 @@
 				B3310587271F414B00E0FD29 /* Result.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		B3DE0EAD2720A5ED00AFCE0C /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				B33105B52720A11C00E0FD29 /* GetExchangeRateServiceTests.swift */,
+				B3DE0EAE2720A61C00AFCE0C /* URLSessionAPIClientTests.swift */,
+			);
+			path = Infraestructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,8 +366,12 @@
 			files = (
 				B33105A4272085B900E0FD29 /* PenguinPayTests.swift in Sources */,
 				B33105B227208FEB00E0FD29 /* GetCountryServiceMock.swift in Sources */,
+				B3DE0EB12720AA6000AFCE0C /* SessionMock.swift in Sources */,
 				B33105AC272085E800E0FD29 /* SendTransactionsViewModelTests.swift in Sources */,
+				B33105B62720A11C00E0FD29 /* GetExchangeRateServiceTests.swift in Sources */,
+				B3DE0EAF2720A61C00AFCE0C /* URLSessionAPIClientTests.swift in Sources */,
 				B33105B027208FB400E0FD29 /* GetExchangeRateServiceMock.swift in Sources */,
+				B3DE0EAC2720A5C800AFCE0C /* APIClientMock.swift in Sources */,
 				B33105B42720900700E0FD29 /* BinaryConverterServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
