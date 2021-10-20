@@ -16,7 +16,6 @@
 		B33105972720699500E0FD29 /* DefaultBinaryConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33105962720699500E0FD29 /* DefaultBinaryConverterService.swift */; };
 		B331059A272069CF00E0FD29 /* BinaryConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3310599272069CF00E0FD29 /* BinaryConverterService.swift */; };
 		B331059C27206C4300E0FD29 /* UIButton+Enable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B331059B27206C4300E0FD29 /* UIButton+Enable.swift */; };
-		B33105A4272085B900E0FD29 /* PenguinPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33105A3272085B900E0FD29 /* PenguinPayTests.swift */; };
 		B33105AC272085E800E0FD29 /* SendTransactionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33105AB272085E800E0FD29 /* SendTransactionsViewModelTests.swift */; };
 		B33105B027208FB400E0FD29 /* GetExchangeRateServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33105AF27208FB400E0FD29 /* GetExchangeRateServiceMock.swift */; };
 		B33105B227208FEB00E0FD29 /* GetCountryServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33105B127208FEB00E0FD29 /* GetCountryServiceMock.swift */; };
@@ -62,7 +61,6 @@
 		B3310599272069CF00E0FD29 /* BinaryConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryConverterService.swift; sourceTree = "<group>"; };
 		B331059B27206C4300E0FD29 /* UIButton+Enable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Enable.swift"; sourceTree = "<group>"; };
 		B33105A1272085B900E0FD29 /* PenguinPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenguinPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B33105A3272085B900E0FD29 /* PenguinPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenguinPayTests.swift; sourceTree = "<group>"; };
 		B33105A5272085B900E0FD29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B33105AB272085E800E0FD29 /* SendTransactionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTransactionsViewModelTests.swift; sourceTree = "<group>"; };
 		B33105AF27208FB400E0FD29 /* GetExchangeRateServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeRateServiceMock.swift; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 		B33105A2272085B900E0FD29 /* PenguinPayTests */ = {
 			isa = PBXGroup;
 			children = (
-				B33105A3272085B900E0FD29 /* PenguinPayTests.swift */,
 				B33105AE27208F9200E0FD29 /* Utilities */,
 				B3DE0EAD2720A5ED00AFCE0C /* Infraestructure */,
 				B33105AD27208F7C00E0FD29 /* Presentation */,
@@ -371,7 +368,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3DE0EB62720AC5E00AFCE0C /* GetCountryServiceTests.swift in Sources */,
-				B33105A4272085B900E0FD29 /* PenguinPayTests.swift in Sources */,
 				B33105B227208FEB00E0FD29 /* GetCountryServiceMock.swift in Sources */,
 				B3DE0EB12720AA6000AFCE0C /* SessionMock.swift in Sources */,
 				B3DE0EB42720AB1B00AFCE0C /* BinaryConverterServiceTests.swift in Sources */,
