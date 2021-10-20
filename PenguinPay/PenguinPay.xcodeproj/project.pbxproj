@@ -38,6 +38,7 @@
 		B3DE0EAF2720A61C00AFCE0C /* URLSessionAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE0EAE2720A61C00AFCE0C /* URLSessionAPIClientTests.swift */; };
 		B3DE0EB12720AA6000AFCE0C /* SessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE0EB02720AA6000AFCE0C /* SessionMock.swift */; };
 		B3DE0EB42720AB1B00AFCE0C /* BinaryConverterServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE0EB32720AB1B00AFCE0C /* BinaryConverterServiceTests.swift */; };
+		B3DE0EB62720AC5E00AFCE0C /* GetCountryServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE0EB52720AC5E00AFCE0C /* GetCountryServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		B3DE0EAE2720A61C00AFCE0C /* URLSessionAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionAPIClientTests.swift; sourceTree = "<group>"; };
 		B3DE0EB02720AA6000AFCE0C /* SessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMock.swift; sourceTree = "<group>"; };
 		B3DE0EB32720AB1B00AFCE0C /* BinaryConverterServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryConverterServiceTests.swift; sourceTree = "<group>"; };
+		B3DE0EB52720AC5E00AFCE0C /* GetCountryServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountryServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +265,7 @@
 				B33105B52720A11C00E0FD29 /* GetExchangeRateServiceTests.swift */,
 				B3DE0EAE2720A61C00AFCE0C /* URLSessionAPIClientTests.swift */,
 				B3DE0EB32720AB1B00AFCE0C /* BinaryConverterServiceTests.swift */,
+				B3DE0EB52720AC5E00AFCE0C /* GetCountryServiceTests.swift */,
 			);
 			path = Infraestructure;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DE0EB62720AC5E00AFCE0C /* GetCountryServiceTests.swift in Sources */,
 				B33105A4272085B900E0FD29 /* PenguinPayTests.swift in Sources */,
 				B33105B227208FEB00E0FD29 /* GetCountryServiceMock.swift in Sources */,
 				B3DE0EB12720AA6000AFCE0C /* SessionMock.swift in Sources */,
