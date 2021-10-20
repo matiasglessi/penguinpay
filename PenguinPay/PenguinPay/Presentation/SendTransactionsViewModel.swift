@@ -59,7 +59,14 @@ class SendTransactionsViewModel {
     private func getTransactionInBinarian(_ exchangeRate: ExchangeRate, _ transactionValue: String) -> String {
         let transactionValueInDecimal = binaryConverterService.toDecimal(binary: transactionValue)
         let finalTransactionValue = Double(transactionValueInDecimal) * exchangeRate
-        return binaryConverterService.toBinary(decimal: Int(finalTransactionValue))
+        
+        return (isConvertionOutOfBounds(finalTransactionValue)) ?
+        binaryConverterService.toBinary(decimal: Int.max) :
+        binaryConverterService.toBinary(decimal: Int(finalTransactionValue))
+    }
+    
+    private func isConvertionOutOfBounds(_ finalTransactionValue: Double) -> Bool {
+        finalTransactionValue > Double(Int.max)
     }
     
     private func getCountry(for partialNumber: String) -> Country? {
