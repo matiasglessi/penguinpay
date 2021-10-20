@@ -34,7 +34,10 @@ class SendTransactionsViewModel {
     }
     
     func getCountryPrefix(for partialNumber: String) -> String {
-        guard let country = getCountry(for: partialNumber) else { return "" }
+        guard let country = getCountry(for: partialNumber) else {
+            exchangeRate = nil
+            return ""
+        }
         return country.id
     }
     
