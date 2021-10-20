@@ -24,13 +24,15 @@ class SendTransactionsViewController: UIViewController {
         super.viewDidLoad()
         viewModel = SendTransactionsViewModel(
             getCountryService: DefaultGetCountryService(),
-            getExchangeRateService: DefaultGetExchangeRateService(apiClient: URLSessionAPIClient()))
+            getExchangeRateService: DefaultGetExchangeRateService(apiClient: URLSessionAPIClient()),
+            binaryConverterService: DefaultBinaryConverterService())
         
         phoneNumberTextField.delegate = self
         transactionValueTextField.delegate = self
         fullNameTextField.delegate = self
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(screenTapped(_:))))
         sendTransactionButton.disable()
+        
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(screenTapped(_:))))
     }
     
     @objc func screenTapped(_ sender: UITapGestureRecognizer? = nil) {
@@ -102,19 +104,5 @@ extension SendTransactionsViewController: UITextFieldDelegate {
                 self.sendTransactionButton.disable() :
                 self.sendTransactionButton.enable()
         }
-    }
-}
-
-extension UIButton {
-    func enable() {
-        isEnabled = true
-        setTitleColor(.white, for: .normal)
-        backgroundColor = .blue
-    }
-    
-    func disable() {
-        isEnabled = false
-        setTitleColor(.gray, for: .normal)
-        backgroundColor = .lightGray
     }
 }

@@ -15,6 +15,7 @@
 		B3310593271F757900E0FD29 /* URLSessionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3310592271F757900E0FD29 /* URLSessionAPIClient.swift */; };
 		B33105972720699500E0FD29 /* DefaultBinaryConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33105962720699500E0FD29 /* DefaultBinaryConverterService.swift */; };
 		B331059A272069CF00E0FD29 /* BinaryConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3310599272069CF00E0FD29 /* BinaryConverterService.swift */; };
+		B331059C27206C4300E0FD29 /* UIButton+Enable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B331059B27206C4300E0FD29 /* UIButton+Enable.swift */; };
 		B39721E4271E0F1300B5C6E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39721E3271E0F1300B5C6E2 /* AppDelegate.swift */; };
 		B39721E6271E0F1300B5C6E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39721E5271E0F1300B5C6E2 /* SceneDelegate.swift */; };
 		B39721E8271E0F1300B5C6E2 /* SendTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39721E7271E0F1300B5C6E2 /* SendTransactionsViewController.swift */; };
@@ -38,6 +39,7 @@
 		B3310592271F757900E0FD29 /* URLSessionAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionAPIClient.swift; sourceTree = "<group>"; };
 		B33105962720699500E0FD29 /* DefaultBinaryConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBinaryConverterService.swift; sourceTree = "<group>"; };
 		B3310599272069CF00E0FD29 /* BinaryConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryConverterService.swift; sourceTree = "<group>"; };
+		B331059B27206C4300E0FD29 /* UIButton+Enable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Enable.swift"; sourceTree = "<group>"; };
 		B39721E0271E0F1300B5C6E2 /* PenguinPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenguinPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39721E3271E0F1300B5C6E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B39721E5271E0F1300B5C6E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				B39721FD271F170500B5C6E2 /* String+PhoneFormatting.swift */,
+				B331059B27206C4300E0FD29 /* UIButton+Enable.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				B3310591271F748300E0FD29 /* Session.swift in Sources */,
 				B33105972720699500E0FD29 /* DefaultBinaryConverterService.swift in Sources */,
 				B39721E4271E0F1300B5C6E2 /* AppDelegate.swift in Sources */,
+				B331059C27206C4300E0FD29 /* UIButton+Enable.swift in Sources */,
 				B3310593271F757900E0FD29 /* URLSessionAPIClient.swift in Sources */,
 				B331058F271F745700E0FD29 /* APIClient.swift in Sources */,
 				B39721FE271F170500B5C6E2 /* String+PhoneFormatting.swift in Sources */,
