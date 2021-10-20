@@ -13,6 +13,8 @@
 		B331058F271F745700E0FD29 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B331058E271F745700E0FD29 /* APIClient.swift */; };
 		B3310591271F748300E0FD29 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3310590271F748300E0FD29 /* Session.swift */; };
 		B3310593271F757900E0FD29 /* URLSessionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3310592271F757900E0FD29 /* URLSessionAPIClient.swift */; };
+		B33105972720699500E0FD29 /* DefaultBinaryConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33105962720699500E0FD29 /* DefaultBinaryConverterService.swift */; };
+		B331059A272069CF00E0FD29 /* BinaryConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3310599272069CF00E0FD29 /* BinaryConverterService.swift */; };
 		B39721E4271E0F1300B5C6E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39721E3271E0F1300B5C6E2 /* AppDelegate.swift */; };
 		B39721E6271E0F1300B5C6E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39721E5271E0F1300B5C6E2 /* SceneDelegate.swift */; };
 		B39721E8271E0F1300B5C6E2 /* SendTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39721E7271E0F1300B5C6E2 /* SendTransactionsViewController.swift */; };
@@ -34,6 +36,8 @@
 		B331058E271F745700E0FD29 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		B3310590271F748300E0FD29 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		B3310592271F757900E0FD29 /* URLSessionAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionAPIClient.swift; sourceTree = "<group>"; };
+		B33105962720699500E0FD29 /* DefaultBinaryConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBinaryConverterService.swift; sourceTree = "<group>"; };
+		B3310599272069CF00E0FD29 /* BinaryConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryConverterService.swift; sourceTree = "<group>"; };
 		B39721E0271E0F1300B5C6E2 /* PenguinPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenguinPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39721E3271E0F1300B5C6E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B39721E5271E0F1300B5C6E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 			children = (
 				B3972203271F17DE00B5C6E2 /* DefaultGetCountryService.swift */,
 				B3310589271F444600E0FD29 /* DefaultGetExchangeRateService.swift */,
+				B33105962720699500E0FD29 /* DefaultBinaryConverterService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 		B3972205271F17FD00B5C6E2 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				B3310599272069CF00E0FD29 /* BinaryConverterService.swift */,
 				B3972201271F17C200B5C6E2 /* GetCountryService.swift */,
 				B3972209271F3F3F00B5C6E2 /* GetExchangeRateService.swift */,
 			);
@@ -252,8 +258,10 @@
 				B331058C271F62D200E0FD29 /* ExchangeRate.swift in Sources */,
 				B39721FB271EF3FB00B5C6E2 /* SendTransactionsViewModel.swift in Sources */,
 				B3972208271F181100B5C6E2 /* Country.swift in Sources */,
+				B331059A272069CF00E0FD29 /* BinaryConverterService.swift in Sources */,
 				B3310588271F414B00E0FD29 /* Result.swift in Sources */,
 				B3310591271F748300E0FD29 /* Session.swift in Sources */,
+				B33105972720699500E0FD29 /* DefaultBinaryConverterService.swift in Sources */,
 				B39721E4271E0F1300B5C6E2 /* AppDelegate.swift in Sources */,
 				B3310593271F757900E0FD29 /* URLSessionAPIClient.swift in Sources */,
 				B331058F271F745700E0FD29 /* APIClient.swift in Sources */,

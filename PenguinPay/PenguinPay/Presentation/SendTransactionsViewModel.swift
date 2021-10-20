@@ -10,21 +10,53 @@ import Foundation
 class SendTransactionsViewModel {
     private let getCountryService: GetCountryService
     private let getExchangeRateService: GetExchangeRateService
+    private let binaryConverterService: BinaryConverterService
+    private var exchangeRate: ExchangeRate?
 
-    init(getCountryService: GetCountryService, getExchangeRateService: GetExchangeRateService) {
+    init(getCountryService: GetCountryService, getExchangeRateService: GetExchangeRateService, binaryConverterService: BinaryConverterService) {
         self.getCountryService = getCountryService
         self.getExchangeRateService = getExchangeRateService
+        self.binaryConverterService = binaryConverterService
     }
-    
-    func getExchangeRate(for countryId: String) {
-        getExchangeRateService.execute(countryID: countryId) { result in
-            print(result)
+        
+    func getExchangeRate(for countryId: String, completion: @escaping () -> Void) {
+        getExchangeRateService.execute(countryID: countryId) { [weak self] result in
+            guard let strongSelf = self else { return }
+            
+            switch result {
+            case .success(let exchangeRate):
+                strongSelf.exchangeRate = exchangeRate
+            case .failure(let error):
+                print(error)
+            }
+            completion()
         }
     }
     
     func getCountryPrefix(for partialNumber: String) -> String {
         guard let country = getCountry(for: partialNumber) else { return "" }
         return country.id
+    }
+    
+    
+    func getTransactionMessage(recipientName: String?, recipientCountry: String?, transactionValue: String?) -> String {
+
+        guard let recipientName = recipientName else { return "" }
+        guard let recipientCountry = recipientCountry else { return "" }
+        guard let transactionValue = transactionValue else { return "" }
+        guard let exchangeRate = exchangeRate else { return "" }
+        
+        return recipientName + " will recieve " + "\n" + getTransactionInBinarian(exchangeRate, transactionValue) + "\n" + getConvertionExpression(exchangeRate, recipientCountry)
+    }
+    
+    private func getConvertionExpression(_ exchangeRate: ExchangeRate, _ recipientCountry: String) -> String {
+        return "(1 Binarian Dollar = " + String(exchangeRate) + " " +  String(recipientCountry) + ")"
+    }
+    
+    private func getTransactionInBinarian(_ exchangeRate: ExchangeRate, _ transactionValue: String) -> String {
+        let transactionValueInDecimal = binaryConverterService.toDecimal(binary: transactionValue)
+        let finalTransactionValue = Double(transactionValueInDecimal) * exchangeRate
+        return binaryConverterService.toBinary(decimal: Int(finalTransactionValue))
     }
     
     private func getCountry(for partialNumber: String) -> Country? {
